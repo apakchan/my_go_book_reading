@@ -20,6 +20,7 @@ func main() {
 			if c > 'z' {
 				c -= 26
 			}
+
 			fmt.Printf("%c", c)
 		} else {
 			fmt.Printf(" ")
