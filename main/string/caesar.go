@@ -4,7 +4,7 @@ import (
 	"fmt"
 )
 
-func isEnglish(character rune) bool {
+func IsEnglish(character rune) bool {
 	return (character >= 'a' && character <= 'z') || (character >= 'A' && character <= 'Z')
 }
 
@@ -15,7 +15,7 @@ func international() {
 func main() {
 	rawMessage := "L fdph, L vdz, L frqtxhuhg"
 	for _, c := range rawMessage {
-		if isEnglish(c) {
+		if IsEnglish(c) {
 			c += 3
 			if c > 'z' {
 				c -= 26
